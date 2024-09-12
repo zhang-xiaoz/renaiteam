@@ -1,0 +1,140 @@
+2024-02-19T10:19:16.652+0800	ERROR	api/user_unlisted.go:38	failed to build resolver: passthrough: received empty target in Build()
+2024-02-19T10:19:45.687+0800	ERROR	api/user_unlisted.go:38	failed to build resolver: passthrough: received empty target in Build()
+2024-02-19T10:23:00.642+0800	ERROR	api/user_unlisted.go:38	
+2024-02-19T10:23:00.660+0800	ERROR	api/user_unlisted.go:39	failed to build resolver: passthrough: received empty target in Build()
+2024-02-27T18:14:42.596+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:17:25.040+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:17:32.023+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:18:01.041+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:18:20.378+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:18:24.416+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-02-27T18:18:49.184+0800	INFO	api/user_unlisted.go:187	注册时redis锁重置8秒
+2024-03-06T19:07:03.373+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-06T19:07:05.822+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-06T19:08:22.792+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-06T19:08:30.002+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-06T19:18:18.482+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-06T19:33:42.334+0800	ERROR	middlewares/picture_check.go:19	Key: 'User_login.mailbox' Error:Field validation for 'mailbox' failed on the 'email' tag
+2024-03-06T19:34:08.702+0800	ERROR	middlewares/picture_check.go:19	Key: 'User_login.mailbox' Error:Field validation for 'mailbox' failed on the 'email' tag
+2024-03-06T19:34:10.498+0800	ERROR	middlewares/picture_check.go:19	Key: 'User_login.mailbox' Error:Field validation for 'mailbox' failed on the 'email' tag
+2024-03-06T19:49:44.646+0800	INFO	api/user_unlisted.go:400	注册时redis锁重置8秒
+2024-03-06T19:51:13.669+0800	INFO	api/user_unlisted.go:400	注册时redis锁重置8秒
+2024-03-06T19:59:35.477+0800	INFO	api/user_unlisted.go:400	注册时redis锁重置8秒
+2024-03-06T20:00:19.922+0800	INFO	api/user_unlisted.go:400	注册时redis锁重置8秒
+2024-03-06T20:01:02.908+0800	INFO	api/user_unlisted.go:400	注册时redis锁重置8秒
+2024-03-07T08:37:26.100+0800	ERROR	api/user_unlisted.go:554	rpc error: code = NotFound desc = 用户不存在
+2024-03-07T09:03:43.985+0800	INFO	api/user_unlisted.go:778	注册时redis锁重置8秒
+2024-03-07T09:05:27.365+0800	INFO	api/user_unlisted.go:778	注册时redis锁重置8秒
+2024-03-07T09:06:36.666+0800	INFO	api/user_unlisted.go:778	注册时redis锁重置8秒
+2024-03-07T09:30:19.424+0800	INFO	api/user_unlisted.go:778	注册时redis锁重置8秒
+2024-03-07T09:44:22.560+0800	INFO	api/user_unlisted.go:778	注册时redis锁重置8秒
+2024-03-07T09:56:29.688+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T09:59:14.512+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T09:59:32.673+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:00:39.901+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:03:51.495+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:03:53.091+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:04:05.879+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:04:07.980+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:04:09.731+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:04:11.082+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:05:28.154+0800	ERROR	middlewares/jwt.go:26	EOF
+2024-03-07T10:10:38.327+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-03-07T10:19:02.306+0800	ERROR	middlewares/jwt.go:60	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T10:19:26.850+0800	ERROR	middlewares/jwt.go:95	<nil>
+2024-03-07T10:20:01.190+0800	ERROR	middlewares/jwt.go:95	<nil>
+2024-03-07T10:20:25.852+0800	ERROR	middlewares/jwt.go:95	<nil>
+2024-03-07T10:21:15.451+0800	ERROR	middlewares/jwt.go:91	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:15.471+0800	ERROR	middlewares/jwt.go:92	eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:15.471+0800	ERROR	middlewares/jwt.go:97	<nil>
+2024-03-07T10:21:17.615+0800	ERROR	middlewares/jwt.go:91	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:17.615+0800	ERROR	middlewares/jwt.go:92	eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:17.615+0800	ERROR	middlewares/jwt.go:97	<nil>
+2024-03-07T10:21:19.569+0800	ERROR	middlewares/jwt.go:91	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:19.569+0800	ERROR	middlewares/jwt.go:92	eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:21:19.569+0800	ERROR	middlewares/jwt.go:97	<nil>
+2024-03-07T10:21:37.387+0800	ERROR	middlewares/jwt.go:107	rpc error: code = NotFound desc = 用户不存在
+2024-03-07T10:26:58.007+0800	ERROR	middlewares/jwt.go:107	rpc error: code = NotFound desc = 用户不存在
+2024-03-07T10:30:39.323+0800	ERROR	middlewares/jwt.go:107	rpc error: code = NotFound desc = 用户不存在
+2024-03-07T10:33:43.002+0800	ERROR	middlewares/jwt.go:91	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk5NTE2MDYsIm5iZiI6MTcwOTc3ODgwNn0.Abt5eW5p9dL9W9p1pnvyAp7seBDcaBLZMIgJR1MN3PU
+2024-03-07T10:33:43.002+0800	ERROR	middlewares/jwt.go:92	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYWlsYm94IjoiMjcyODc1MzM0OEBxcS5jb20iLCJleHAiOjE3MDk4OTkyNTgsIm5iZiI6MTcwOTcyNjQ1OH0.MLv2ByEJFwZntqr6XJSGN1s9MQAr2x4BWMFtNhQ1z5Y
+2024-03-07T10:33:43.002+0800	ERROR	middlewares/jwt.go:97	<nil>
+2024-03-07T10:39:31.987+0800	ERROR	middlewares/jwt.go:115	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123123123
+2024-03-07T10:39:32.005+0800	ERROR	middlewares/jwt.go:133	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1234123
+2024-03-07T10:39:32.005+0800	ERROR	middlewares/jwt.go:140	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123441
+2024-03-07T10:39:32.005+0800	ERROR	middlewares/jwt.go:148	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123
+2024-03-07T10:41:24.013+0800	ERROR	middlewares/jwt.go:115	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123123123
+2024-03-07T10:41:24.032+0800	ERROR	middlewares/jwt.go:133	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1234123
+2024-03-07T10:41:24.032+0800	ERROR	middlewares/jwt.go:140	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123441
+2024-03-07T10:41:24.032+0800	ERROR	middlewares/jwt.go:148	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123
+2024-03-07T10:41:24.144+0800	ERROR	middlewares/jwt.go:160	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa121231233
+2024-03-07T10:41:24.259+0800	ERROR	middlewares/jwt.go:167	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa112313131312323
+2024-03-07T10:41:24.259+0800	ERROR	middlewares/jwt.go:182	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1223242342344234242342342343
+2024-03-07T10:49:22.684+0800	ERROR	middlewares/jwt.go:115	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123123123
+2024-03-07T10:49:22.684+0800	ERROR	middlewares/jwt.go:133	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1234123
+2024-03-07T10:49:22.684+0800	ERROR	middlewares/jwt.go:140	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123441
+2024-03-07T10:49:22.684+0800	ERROR	middlewares/jwt.go:148	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa123
+2024-03-07T10:49:22.787+0800	ERROR	middlewares/jwt.go:160	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa121231233
+2024-03-07T10:49:22.888+0800	ERROR	middlewares/jwt.go:167	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa112313131312323
+2024-03-07T10:49:22.888+0800	ERROR	middlewares/jwt.go:182	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1223242342344234242342342343
+2024-03-07T10:49:22.888+0800	ERROR	api/user_login.go:27	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-03-07T11:12:14.565+0800	ERROR	api/user_login.go:27	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-03-07T14:53:07.030+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:53:09.519+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:54:32.658+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:55:04.092+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:55:07.293+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:55:26.462+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:55:28.254+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:56:08.132+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T14:57:26.899+0800	INFO	api/user_login.go:437	注册时redis锁重置8秒
+2024-03-07T15:00:18.022+0800	INFO	api/user_login.go:439	注册时redis锁重置8秒
+2024-03-07T15:00:32.309+0800	INFO	api/user_login.go:439	注册时redis锁重置8秒
+2024-03-07T15:00:34.776+0800	INFO	api/user_login.go:439	注册时redis锁重置8秒
+2024-03-07T15:01:05.869+0800	INFO	api/user_login.go:439	注册时redis锁重置8秒
+2024-03-07T16:10:25.680+0800	ERROR	middlewares/jwt.go:69	<nil>
+2024-03-07T19:33:59.612+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:34:11.942+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:37:16.021+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:37:19.819+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:38:38.480+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:38:40.835+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:39:04.371+0800	ERROR	api/user_login.go:577	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:40:14.832+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:40:14.852+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:41:20.467+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:41:20.467+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:43:21.553+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:43:21.553+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:45:33.120+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:45:33.121+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:47:05.993+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:47:05.993+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:47:34.636+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:47:34.636+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:47:59.748+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:47:59.748+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-07T19:49:43.562+0800	ERROR	api/user_login.go:577	eaca5a1a-078e-45a5-8132-eee4010683c2_change_logout
+2024-03-07T19:49:43.562+0800	ERROR	api/user_login.go:578	rpc error: code = NotFound desc = 不存在该信息
+2024-03-08T12:49:39.599+0800	ERROR	middlewares/picture_check.go:19	EOF
+2024-03-08T12:56:17.101+0800	ERROR	middlewares/jwt.go:86	rpc error: code = NotFound desc = 不存在该信息
+2024-03-08T12:59:47.992+0800	ERROR	api/user_login.go:269	<nil>
+2024-03-08T12:59:49.902+0800	ERROR	api/user_login.go:269	<nil>
+2024-03-11T20:10:42.087+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-03-11T20:10:44.325+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-04-21T14:16:40.451+0800	INFO	api/user_unlisted.go:192	注册时redis锁重置8秒
+2024-04-27T13:26:01.995+0800	ERROR	api/user_login.go:114	open ../img/user_picture/默认: The system cannot find the path specified.
+2024-04-27T13:27:03.636+0800	ERROR	api/user_login.go:114	open ../img/user_picture/默认.png: The system cannot find the path specified.
+2024-04-27T13:28:53.895+0800	ERROR	api/user_login.go:114	open .../img/user_picture/默认.png: The system cannot find the path specified.
+2024-04-27T13:41:24.794+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-04-27T13:41:44.888+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-04-27T13:43:28.804+0800	ERROR	middlewares/jwt.go:26	invalid character '-' in numeric literal
+2024-04-27T14:11:22.239+0800	ERROR	api/user_login.go:847	http: no such file
+2024-04-28T13:25:42.768+0800	ERROR	web/main.go:18	启动服务器,端口%s失败:8888
+2024-04-28T13:25:42.791+0800	PANIC	web/main.go:19	错误原因:listen tcp: lookup localhost : no such host
+2024-04-28T13:27:02.897+0800	ERROR	web/main.go:18	启动服务器,端口%s失败:8888
+2024-04-28T13:27:02.922+0800	PANIC	web/main.go:19	错误原因:listen tcp: lookup localhost : no such host
+2024-04-28T13:28:19.417+0800	ERROR	web/main.go:18	启动服务器,端口%s失败:8888
+2024-04-28T13:28:19.441+0800	PANIC	web/main.go:19	错误原因:listen tcp: lookup localhost : no such host
+2024-04-28T13:30:32.310+0800	ERROR	web/main.go:18	启动服务器,端口%s失败:8888
+2024-04-28T13:30:32.350+0800	PANIC	web/main.go:19	错误原因:listen tcp: lookup localhost : no such host
