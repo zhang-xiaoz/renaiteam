@@ -1,0 +1,41 @@
+2024-07-30T15:58:24.631+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T15:59:26.194+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T16:14:11.691+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T16:15:22.520+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T16:16:43.469+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T16:17:43.370+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T16:17:52.450+0800	ERROR	api/unlogon.go:147	rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024-07-30T16:18:45.486+0800	ERROR	api/unlogon.go:147	rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024-07-30T17:07:26.671+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T17:07:43.771+0800	ERROR	api/front_end_data.go:27	invalid character '}' looking for beginning of object key string
+2024-07-30T17:08:20.048+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T17:08:29.622+0800	ERROR	api/front_end_data.go:27	invalid character '}' looking for beginning of object key string
+2024-07-30T18:46:53.241+0800	ERROR	api/front_end_data.go:164	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:64688->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T18:48:48.247+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:48:59.837+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:50:13.285+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:50:15.325+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:52:29.742+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:54:14.968+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T18:55:49.585+0800	ERROR	api/front_end_data.go:164	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:65167->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T18:57:12.723+0800	ERROR	api/front_end_data.go:164	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:65267->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T18:58:26.574+0800	ERROR	api/front_end_data.go:164	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:65498->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T19:00:28.123+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T19:00:48.461+0800	ERROR	api/front_end_data.go:166	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:49377->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T19:02:27.104+0800	ERROR	api/front_end_data.go:166	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:49707->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T20:43:51.269+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-07-30T20:44:09.531+0800	ERROR	api/front_end_data.go:166	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:51285->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T20:47:28.254+0800	ERROR	api/front_end_data.go:166	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:51699->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T20:49:07.091+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T20:49:27.185+0800	ERROR	api/front_end_data.go:166	rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:51850->[::1]:50053: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-07-30T21:16:12.051+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T21:26:43.121+0800	ERROR	api/front_end_data.go:56	rpc error: code = Unknown desc = 没有找到数据
+2024-07-30T21:28:58.807+0800	ERROR	api/front_end_data.go:283	rpc error: code = Unknown desc = Error 1062 (23000): Duplicate entry '关于我们' for key 'PRIMARY'
+2024-07-30T21:53:54.963+0800	ERROR	api/front_end_data.go:389	rpc error: code = Unknown desc = 没有找到数据
+2024-08-08T15:05:33.936+0800	INFO	web/main.go:13	配置文件读取完毕
+2024-08-08T15:07:37.609+0800	ERROR	api/blog_information.go:424	rpc error: code = Unknown desc = 没有找到
+2024-08-08T15:11:51.618+0800	ERROR	api/blog_information.go:483	rpc error: code = Unknown desc = 没有找到
+2024-08-08T15:11:55.884+0800	ERROR	api/blog_information.go:483	rpc error: code = Unknown desc = 没有找到
+2024-08-08T15:12:23.587+0800	ERROR	api/blog_information.go:483	rpc error: code = Unknown desc = 没有找到
+2024-08-08T15:13:08.610+0800	ERROR	api/blog_information.go:483	rpc error: code = Unknown desc = 没有找到
+2024-08-08T15:14:12.993+0800	INFO	web/main.go:13	配置文件读取完毕

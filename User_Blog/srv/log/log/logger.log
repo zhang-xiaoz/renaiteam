@@ -1,0 +1,112 @@
+2024-04-09T12:54:03.286+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-09T12:54:07.735+0800	ERROR	hander/elastic.go:141	elastic: Error 400 (Bad Request): Expected [VALUE_STRING] or [VALUE_NUMBER] or [VALUE_BOOLEAN] or [VALUE_NULL] but found [START_ARRAY] inside search_after. [type=parsing_exception]
+2024-04-09T12:54:07.735+0800	ERROR	hander/blogs.go:376	elastic: Error 400 (Bad Request): Expected [VALUE_STRING] or [VALUE_NUMBER] or [VALUE_BOOLEAN] or [VALUE_NULL] but found [START_ARRAY] inside search_after. [type=parsing_exception]
+2024-04-09T13:21:17.713+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-09T13:21:27.144+0800	ERROR	hander/elastic.go:143	elastic: Error 400 (Bad Request): Expected [VALUE_STRING] or [VALUE_NUMBER] or [VALUE_BOOLEAN] or [VALUE_NULL] but found [START_ARRAY] inside search_after. [type=parsing_exception]
+2024-04-09T13:21:27.144+0800	ERROR	hander/blogs.go:376	elastic: Error 400 (Bad Request): Expected [VALUE_STRING] or [VALUE_NUMBER] or [VALUE_BOOLEAN] or [VALUE_NULL] but found [START_ARRAY] inside search_after. [type=parsing_exception]
+2024-04-09T18:39:16.879+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-09T18:45:22.134+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-10T13:38:52.401+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-10T16:45:43.514+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-12T12:27:08.140+0800	PANIC	initialization/elastic.go:76	Head "http://43.138.79.122:9200": context deadline exceeded
+2024-04-12T12:28:46.211+0800	INFO	srv/main.go:25	服务器端口开启
+2024-04-12T12:53:52.591+0800	INFO	srv/main.go:25	服务器端口开启
+2024-04-12T12:56:10.830+0800	INFO	srv/main.go:25	服务器端口开启
+2024-04-15T09:51:03.683+0800	INFO	srv/main.go:25	服务器端口开启
+2024-04-15T10:46:57.601+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T10:49:58.829+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T11:09:09.887+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T11:09:57.368+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T11:10:48.907+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:02:48.220+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:03:03.170+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:10:40.925+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:15:28.955+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:19:21.314+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:21:37.938+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:25:45.177+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:27:42.492+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:28:26.356+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:30:26.223+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T13:33:48.901+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T15:27:34.653+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T15:32:03.249+0800	ERROR	hander/blogs.go:605	ERR Protocol error: expected '$', got '*'
+2024-04-15T15:37:23.258+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T15:37:38.393+0800	ERROR	hander/blogs.go:607	write tcp 192.168.0.179:56895->43.138.79.122:6379: use of closed network connection
+2024-04-15T15:41:34.218+0800	ERROR	hander/blogs.go:607	write tcp 192.168.0.179:57099->43.138.79.122:6379: use of closed network connection
+2024-04-15T15:42:03.652+0800	ERROR	hander/blogs.go:607	write tcp 192.168.0.179:57126->43.138.79.122:6379: use of closed network connection
+2024-04-15T15:42:41.856+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T15:42:53.177+0800	ERROR	hander/blogs.go:607	set tcp 192.168.0.179:57199: use of closed network connection
+2024-04-15T15:43:57.513+0800	ERROR	hander/blogs.go:607	write tcp 192.168.0.179:57262->43.138.79.122:6379: use of closed network connection
+2024-04-15T15:46:56.981+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-15T15:47:10.326+0800	ERROR	hander/blogs.go:607	write tcp 192.168.0.179:57591->43.138.79.122:6379: use of closed network connection
+2024-04-15T16:07:38.594+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-21T17:16:05.843+0800	ERROR	initialization/mysql.go:23	dial tcp 43.138.79.122:3306: connectex: No connection could be made because the target machine actively refused it.
+2024-04-21T17:16:09.987+0800	PANIC	initialization/elastic.go:76	health check timeout: Head "http://43.138.79.122:9200": dial tcp 43.138.79.122:9200: connectex: No connection could be made because the target machine actively refused it.: no Elasticsearch node available
+2024-04-21T17:19:22.111+0800	PANIC	initialization/elastic.go:76	health check timeout: Head "http://43.138.79.122:9200": dial tcp 43.138.79.122:9200: connectex: No connection could be made because the target machine actively refused it.: no Elasticsearch node available
+2024-04-21T17:20:23.406+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-21T17:26:07.061+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-21T17:28:01.269+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-21T17:29:10.913+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-21T17:34:20.713+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T09:05:55.571+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T09:11:03.473+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T09:12:35.109+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T09:15:35.219+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T09:18:53.559+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T11:08:55.653+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T11:12:12.800+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:38:51.164+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:41:22.146+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:41:26.932+0800	ERROR	hander/elastic.go:204	<nil>
+2024-04-22T13:42:27.272+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:42:33.217+0800	ERROR	hander/elastic.go:204	<nil>
+2024-04-22T13:49:56.634+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:50:05.961+0800	ERROR	hander/elastic.go:205	<nil>
+2024-04-22T13:52:25.946+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:52:35.349+0800	ERROR	hander/elastic.go:205	elastic: Error 404 (Not Found)
+2024-04-22T13:56:31.554+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:56:41.603+0800	ERROR	hander/elastic.go:209	elastic: Error 404 (Not Found)
+2024-04-22T13:57:36.851+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T13:57:45.070+0800	ERROR	hander/elastic.go:210	elastic: Error 404 (Not Found)
+2024-04-22T14:02:49.136+0800	INFO	srv/main.go:24	服务器端口开启2024-04-22T14:06:20.133+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T14:06:52.281+0800	ERROR	hander/elastic.go:204	elastic: Error 404 (Not Found)
+2024-04-22T14:09:23.842+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T14:09:32.419+0800	ERROR	hander/elastic.go:205	elastic: Error 404 (Not Found)
+2024-04-22T14:12:00.929+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-22T14:12:09.357+0800	ERROR	hander/elastic.go:207	elastic: Error 404 (Not Found)
+2024-04-23T16:02:20.991+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-23T16:05:48.526+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-23T16:12:28.820+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-23T16:13:30.557+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-23T17:17:23.809+0800	INFO	srv/main.go:24	服务器端口开启
+2024-04-23T17:19:44.122+0800	ERROR	hander/blogs.go:104	f7d1ce19-2f0a-4a4d-bb9c-d2d60b9a78a3
+2024-04-23T17:19:44.122+0800	ERROR	hander/blogs.go:105	5900e770-3c68-4ed2-9506-d014cd3ed073
+2024-05-13T13:55:52.907+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T14:35:03.871+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T14:38:29.496+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T14:40:51.311+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T14:45:29.614+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T15:18:58.312+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T15:20:10.692+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:00:58.645+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:02:55.148+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:05:34.992+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:07:22.176+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:08:39.761+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:09:56.334+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:10:34.253+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:11:09.284+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:12:00.780+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:15:30.825+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:45:37.609+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T16:47:54.504+0800	INFO	srv/main.go:24	服务器端口开启
+2024-05-13T17:24:15.771+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-06T16:09:07.000+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-07T16:37:26.432+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-07T17:16:54.435+0800	ERROR	hander/blogs.go:1012	sql: Scan error on column index 11, name "creat_time": converting driver.Value type time.Time ("2024-06-03 02:17:25 +0800 CST") to a int: invalid syntax; sql: Scan error on column index 11, name "creat_time": converting driver.Value type time.Time ("2024-06-03 02:14:30 +0800 CST") to a int: invalid syntax; sql: Scan error on column index 11, name "creat_time": converting driver.Value type time.Time ("2024-06-03 00:30:28 +0800 CST") to a int: invalid syntax
+2024-08-07T17:20:32.083+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-08T15:05:21.628+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-08T15:09:21.805+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-08T15:18:14.385+0800	INFO	srv/main.go:24	服务器端口开启
+2024-08-08T15:23:50.035+0800	INFO	srv/main.go:24	服务器端口开启

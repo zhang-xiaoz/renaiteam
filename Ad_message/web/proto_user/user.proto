@@ -1,0 +1,103 @@
+syntax ="proto3";
+option go_package="./;proto_user";
+import "google/protobuf/empty.proto";
+service Users{
+    rpc Register_Mailbox_Back(Mailbox)returns(Mailbox_Back);//查看是否能够注册//是否满足注册需求
+    rpc Get_Redis_Storage(Redis_Storage)returns(Redis_Storage);//获取redis里边数据
+    rpc Save_Redis_Storage(Redis_Storage)returns(BACK);//往ridis里边存储数据
+    // rpc Renew_User_Message(User_Message)returns(BACK);//更新user数据
+    rpc Add_User_Message(User_Message)returns(BACK);//添加user数据//也能更新只要主键是Mailbox
+    rpc Delete_Redis_Storage(Redis_Storage)returns(BACK);//删除redis里边数据
+    rpc Get_User_Mesaage_Mysql(Mailbox)returns(User_Message);//获取数据库里边所有信息
+    rpc Revise_User_Message_Mysql(User_Change)returns(BACK);//更改数据库里边的数据
+    rpc Get_User_Mailbox(Mailbox)returns(Mailbox);//根据uuid查找mailbox(两个都是string类型，所以我都用的一个结构体)
+    rpc Revise_User_Password_Mysql(User_Password)returns(BACK);//更改用户密码
+    rpc Revise_User_Status_Mysql(Mailbox_Back)returns(BACK);//修改状态标识符
+    rpc Revise_User_Mailbox_Mysql(Mailbox_Back)returns(BACK);//修改邮箱信息
+    rpc Get_User_Password_Mysql(Mailbox)returns(Mailbox);//单个获取密码//根据uuid
+    rpc Delete_Mysql_Mailbox(Mailbox)returns(BACK);//根据mailbox删除mysql里边的东西
+    rpc Get_Register_User(MemberPaging)returns(Message);//获取注册的信息
+    rpc Revise_User_Status(User_Revise_Status)returns(google.protobuf.Empty);//更改users用户状态 改成1
+    rpc Refuse_User_Status(Mailbox)returns(google.protobuf.Empty);//根据邮箱删除用户
+    rpc Get_User(MemberPaging)returns(Message);//获取正常用户信息
+    rpc Seek_Grade_User(MemberPaging)returns(Message);//根据年级查找用户
+    rpc Seek_Name_User(MemberPaging)returns(Message);//根据姓名查找用户
+    rpc Get_Cancel_User(MemberPaging)returns(Message);//查找注销用户，和查看注销原因
+    rpc Get_Blacklist_User(MemberPaging)returns(Message);//获取黑名单用户
+    rpc Delete_Blacklist_User(Mailbox)returns(google.protobuf.Empty);//删除黑名单用户
+    rpc Add_Blacklist_User(Blacklist_User)returns(google.protobuf.Empty);//增加黑名单用户
+    rpc Add_Register_Blacklist(Blacklist_User)returns(google.protobuf.Empty);//注册用户修改成黑名单
+}
+
+message User_Revise_Status{
+    int64 status=1;//状态标识符
+    string mailbox=2;//邮箱
+    string grade=3;//年级
+}
+
+message Blacklist_User{
+    int64 status=1;//状态标识符
+    string uuid=2;//唯一标识符
+    string mailbox=3;//邮箱
+    string password=4;//密码
+}
+
+message MemberPaging{
+    int64 p=1;//页数
+    int64 pn=2;//一页有多少数据
+    string message=3;//具体分页数据是谁 
+}
+
+message Message {
+    string message=1;
+}
+
+message Mailbox{
+    string mailbox=1;//邮箱
+}
+
+message Mailbox_Back{
+    int64 status=1;//状态标识符
+    string uuid=2;//唯一标识符
+    string mailbox=3;//邮箱
+}
+
+message BACK{
+    bool back=1;
+}
+
+message Redis_Storage{
+    string key=1;
+    string value=2;
+    string who=3;//哪个redis数据库
+    int64 time=4;//0表示永久有效
+}
+
+message User_Message{//用户实际所有信息
+	int64 status=1;   //状态  1表示正常用户 2表示注销过的用户 3表示未通过审核  4表示改用户不允许注册已经被拉黑
+	string uuid=2;       //唯一标识符
+	string mailbox=3;      //邮箱
+	string password=4;     //密码
+	string username=5;    //用户名
+	string name=6;      //姓名
+	string sex=7;        //性别
+	string address=8;    //地址
+    string grade=9;      //年级
+	string direction=10; //方向
+	string qq=11;      //qq
+	string wechat=12;   //微信
+	string position=13;  //职位
+	string motto=14;     //座右铭
+	string creat_time=15;  //创建时间
+	string delete_time=16; //注销时间
+}
+
+message User_Change{//更改用户信息(除邮箱外)
+    map<string, string> user_message=1;
+}
+
+message User_Password{
+    string uuid=1;//uuid
+    string password=2;//密码
+}
+//protoc --go_out=. --go-grpc_out=. user.proto

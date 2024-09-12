@@ -1,0 +1,12 @@
+logger:
+ filename: './log/log/logger.log' 
+ maxsize: 50                  
+ maxsave: 1                
+ maxNumbers: 4                     
+ compress: true  
+server:
+ host: 'localhost'
+ port: ':8089'
+grpcserver:
+ host: 'localhost'
+ port: ':50053'

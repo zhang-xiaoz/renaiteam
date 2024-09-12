@@ -1,0 +1,49 @@
+syntax ="proto3";
+option go_package="./;proto";
+import "google/protobuf/empty.proto";
+service Pagemessage{
+    rpc Get_member_message(PageMemberPaging)returns(MessagePage);//根据分页信息获取成员信息数据
+    rpc Get_prize_message(PageMemberPaging)returns(MessagePage);//获取获奖信息
+    rpc Get_club_direction_message(google.protobuf.Empty)returns(MessagePage);//获取社团主攻方向信息
+    rpc Get_training_personnel(PageMemberPaging)returns(MessagePage);//获取培训人员信息
+    rpc Get_training_message(google.protobuf.Empty)returns(MessagePage);//获取招新信息
+    rpc Get_training_time(google.protobuf.Empty)returns(MessagePage);//获取招新时间显示
+    rpc Get_about_us(google.protobuf.Empty)returns(MessagePage);//获取首页关于我们数据
+    rpc Get_learning_style(google.protobuf.Empty)returns(MessagePage);//获取首页学习方式
+    rpc Get_club_location(google.protobuf.Empty)returns(MessagePage);//获取社团位置
+    rpc Revise_Message(ReviseMessage)returns(google.protobuf.Empty);//修改message数据库数据
+    rpc Add_Training_Time(ReviseMessage)returns(google.protobuf.Empty);//增加培训时间
+    rpc Del_Training_TIme(DelMessage)returns(google.protobuf.Empty);//删除培训时间数据
+    rpc Add_Club_Direction(ReviseMessage)returns(google.protobuf.Empty);//增加主攻方向
+    rpc Del_Club_Direction(ReviseMessage)returns(google.protobuf.Empty);//删除主攻方向数据
+    rpc Revise_Award_Information(Prize)returns(google.protobuf.Empty);//修改奖项数据
+    rpc Del_Award_Information(Prize)returns(google.protobuf.Empty);//删除奖项数据
+    rpc Add_Award_Information(Prize)returns(google.protobuf.Empty);//增加奖项数据
+}
+
+message Prize {
+    string uuid=1;
+    string name=2;
+    string adards=3;
+    string time=4;
+}
+
+message DelMessage{
+    repeated ReviseMessage message=1;
+}
+message ReviseMessage{
+    string key=1;
+    string keyform=2;
+    string value1=3;//需要修改的数据1
+    string value2=4;//需要修改的数据2 
+}
+message PageMemberPaging{
+    int64 p=1;//页数
+    int64 pn=2;//一页有多少数据
+    string message=3;//具体分页数据是谁 
+}
+message MessagePage {
+    string message=1;
+}
+
+//protoc --go_out=. --go-grpc_out=. pagemessage.proto

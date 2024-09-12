@@ -1,0 +1,17 @@
+server:
+ host: 'localhost'
+ port: ':50053'
+logger:
+ filename: './log/log/logger.log' 
+ maxsize: 50                  
+ maxsave: 1                
+ maxNumbers: 4                     
+ compress: true  
+mysql:
+ user: 'root'
+ password: 'wasd2002'
+ port: '106.14.30.173:3306'
+ name: 'renai'
+redis:
+ port: '106.14.30.173:6379'
+ password: 'wasd2002'

@@ -1,0 +1,151 @@
+syntax ="proto3";
+option go_package="./;proto";
+import "google/protobuf/empty.proto";
+service Blogs{
+    rpc Add_Blog_Message_Mysql_blog(Blog_blog)returns(BACK_blog);//保存博客信息
+    rpc Revise_Blog_Process_Mysql_blog(BlogProcess_blog)returns(BACK_blog);//更改文章状态//成功为true
+    rpc Check_Blog_Uuid_Mysql_blog(BlogProcess_blog)returns(BACK_blog);//看该用户是否有该文章//有则为true
+    rpc Get_Blog_Message_Elastic_Top_blog(google.protobuf.Empty)returns(Blogloading_blog);//获取blog主页前边数据
+    rpc Check_Blog_Uuid_Elastic_Blog(Blogloading_blog)returns(BACK_blog);//判断blog主页前边数据是否还能使用
+    rpc Get_Blog_Message_ArticleUuid(Blog_ArticleUuid)returns(Blog_Elastic_Message_Top_blog);//根据uuid获取Elastic数据
+    rpc Get_Blog_Message_Elastic_Lower(Blogloading_blog)returns(Blog_Elastic_Message_Top_blogs);
+    rpc Add_Blog_Reading_Volume(Blog_ArticleUuid)returns(BACK_blog);//某个文章阅读量加1
+    rpc Get_Blog_Mysql_Message(Blog_ArticleUuid)returns(Blog_blog);//获取某个文章
+    rpc Search_Blog_Elastic_blog(AAAAA)returns(Blog_Elastic_Message_Serach_blogs);//用户搜索
+    rpc Save_Redis_Storage_blog(Redis_Storage_Blog)returns(Redis_Back_Picture);//往ridis里边存储数据
+    rpc Delete_El6_Mysql_blog(Redis_Storage_Blog)returns(BACK_blog);//删除某个文章
+    rpc Completely_El6_Mysql_blog(Blog_ArticleUuid)returns(BACK_blog);//彻底删除某个博客
+    rpc Get_Delete_Blog_Mysql(AAAA)returns(Blog_Elastic_Message_Serach_blogs);//根据文章状态获取文章
+    rpc Revise_Blog_Process_Plus_blog(BlogProcessPlus_blog)returns(BACK_blog);//修改文章状态plus
+    rpc Add_Mysql_Blog_Collection(Blog_UserUuid)returns(BACK_blog);//存储到数据库blog_collection里边数据
+    rpc Delete_Mysql_Blog_Collection(Blog_UserUuid)returns(BACK_blog);//删除存储到数据库blog_collection里边数据
+    rpc Get_Mysql_Blog_Collection(UserUuid_Blog)returns(Blog_Elastic_Message_Collection_blogs);
+    rpc Revise_Blog_Elastic_Mysql(Blog_blog)returns(BACK_blog);//修改elastic和mysql里边的部分数据
+    rpc Search_Blog_Label_Elastic(AAAAA)returns(Blog_Elastic_Message_Serach_blogs);//用户搜索//根据标签获取数据
+    rpc Get_Blog_Collection_Status(Blog_UserUuid)returns(Status);//判断状态
+    rpc Get_Blog_Manage_All(Blog_Page)returns(Blog_Message);//根据状态分页获取博客
+    rpc Delete_El6_Mysql_Process(BlogProcess_blog)returns(BACK_blog);//删除某个文章到草稿
+    rpc Get_Blog_Manage_Name(Blog_Page)returns(Blog_Message);//根据姓名分页获取博客
+    rpc Get_Blog_Manage_Title(Blog_Page)returns(Blog_Message);//根据标题分页获取博客
+    rpc Get_Blog_Manage_Label(Blog_Page)returns(Blog_Message);//根据标签分页获取博客
+}
+
+message Blog_Page{
+    int64 p=1;//页数
+    int64 pn=2;//一页有多少数据
+    string message=3;//具体分页数据是谁 
+}
+
+message Blog_Message{
+    string message=1;
+}
+
+message Status {
+    int64 status=1;
+}
+
+message Blog_Elastic_Message_Collection_blogs{
+    int64 number=1;//数量
+    int64 previous=2;
+    repeated Blog_Elastic_Message_Top_blog data=3;
+}
+
+message UserUuid_Blog{
+    string userUuid=1;//文章唯一标识符
+    int64 time=2;//时间
+}
+
+message Redis_Storage_Blog{
+    string key=1;
+    int64 value=2;
+    string who=3;//哪个redis数据库
+}
+
+message AAAA{
+  string A1=1;//用户uuid
+  string A2=2;//搜索信息 按照状态
+  string A3=3;//上一个搜索的uuid
+  int64 A4=4;//上一个搜索的时间
+  int64 A5=5;//是第一次还是第二次搜索//0是1，1是多次
+}
+
+message AAAAA{
+    string A=1;//搜索信息
+    string B =2;//上一个搜索的uuid
+    int64 C =3;//阅读量//时间
+    int64 D=4;//第几次操作
+}
+
+message Redis_Back_Picture{
+    string uuid=1;
+}
+
+message Blog_blog{
+    string articleUuid=1;//文章唯一标识符
+    string userUuid=2;//用户唯一标识符
+    string title=3;//标题
+    string content=4;//内容
+    string label=5;//标签
+    string cover=6;//封面
+    string abstract=7; //摘要
+    string visibility=8;//可见范围
+    string articleType=9;//文章类型
+    string process=10;//是否过审
+    int64 readingvolume =11;  //阅读量
+    string creatTime=12;//创建时间
+}
+
+message BlogProcess_blog{
+    string articleUuid=1;//文章唯一标识符
+    string process=2;//状态标识符
+    string userUuid=3;//用户唯一标识符
+}
+
+message BlogProcessPlus_blog{
+    string articleUuid=1;//文章唯一标识符
+    string process=2;//状态标识符
+    string userUuid=3;//用户唯一标识符
+    int64 code=4;//携带信息的状态码
+    string message=5;//携带的信息
+}
+
+message BACK_blog{
+    bool back=1;
+}
+
+message Blog_ArticleUuid{
+    string articleUuid=1;//文章唯一标识符
+}
+
+message Blog_UserUuid{
+    string userUuid=1;//用户唯一标识符
+    string status=2;//文章状态
+}
+
+message Blogloading_blog{
+    string c=1;//c++/c
+    string a=2;//ai
+    int64 b=3;//时间
+
+}
+
+message Blog_Elastic_Message_Top_blogs{
+    int64 number=1;//时间
+    repeated Blog_Elastic_Message_Top_blog data=2;
+}
+
+message Blog_Elastic_Message_Serach_blogs{
+    int64 number=1;//数量
+    string previous=2;//json化
+    repeated Blog_Elastic_Message_Top_blog data=3;
+}
+
+message Blog_Elastic_Message_Top_blog{
+    string articleUuid=1;//文章唯一标识符
+    string title=2;//标题
+    string cover=3;//封面
+    string abstract=4; //摘要
+    string visibility=5;//可见范围
+}
+
+//protoc --go_out=. --go-grpc_out=. blog.proto
